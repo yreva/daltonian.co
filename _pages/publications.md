@@ -5,7 +5,7 @@ permalink: /publications/
 ---
 #3) Avery B. Dalton\*, Dmitry A. Fishman, and Sergey A. Nizkorodov, Ultrafast Proton Transfer in 4-Nitrocatechol: Implications for the Photochemistry of Nitrophenols, *Journal of Physical Chemistry A*, (2023), *accepted*.
 
-<img src="https://github.com/yreva/daltonian.co/blob/main/images/TOC_1.png" width=500 align='middle'/> 
+<img src="https://raw.githubusercontent.com/yreva/daltonian.co/main/images/TOC_1.png" width=500 align='middle'/> 
 
 #2) Avery B. Dalton, Scott M. Le, Natalia V. Karimova, R. Benny Gerber, and Sergey A. Nizkorodov, Influence of solvent on electronic structure and the photochemistry of nitrophenols, *Environmental Science: Atmospheres* (2023), *3*, pp. 257-267. [DOI:10.1039/d2ea00144f](https://doi.org/10.1039/d2ea00144f) (Front Conver)
 
