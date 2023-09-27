@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Nitrophenols are Photoacids?
+title: AAAR 2023 Poster
 permalink: /AAAR_poster/
 ---
 
-### *Welcome to my poster!* ### 
+# Nitrophenols are Photoacids? #
 
 <img src="https://raw.githubusercontent.com/yreva/daltonian.co/main/images/TOC_1.png" width=400 align='middle'/> 
 
@@ -40,6 +40,20 @@ Density functional theory calculations suggest that 4NC may reorient itself in t
 
 ![TASpectra](/images/Poster4.png)
 ***Fig. 4**. Transient absorption spectra in water and 2-propanol*
+
+**Timeline in Water**
+1.) Sub-ps molecular rearrangement (twisting)
+2.) Deprotonation around 1-2 ps
+3.) Relaxation of the anion
+4.) Long-term build-up of anion in solution
+
+**Timeline in 2-propanol**
+1.) Sub-ps twisting
+2.) Intersystem crossing (~0.7-2.6 ps)
+3.) Triplet population maxes out around 7 ps
+4.) Deprotonation happens from triplet state (~9-35 ps)
+5.) Relaxation of the anion
+6.) Long-term build-up of anion in solution
 
 # Excited-state proton transfer in both solvents!
 
