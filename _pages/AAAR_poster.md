@@ -42,23 +42,42 @@ Density functional theory calculations suggest that 4NC may reorient itself in t
 ***Fig. 4**. Transient absorption spectra in water and 2-propanol*
 
 **Timeline in Water**
+
 1.) Sub-ps molecular rearrangement (twisting)
+
 2.) Deprotonation around 1-2 ps
+
 3.) Relaxation of the anion
+
 4.) Long-term build-up of anion in solution
 
+
 **Timeline in 2-propanol**
+
 1.) Sub-ps twisting
+
 2.) Intersystem crossing (~0.7-2.6 ps)
+
 3.) Triplet population maxes out around 7 ps
+
 4.) Deprotonation happens from triplet state (~9-35 ps)
+
 5.) Relaxation of the anion
+
 6.) Long-term build-up of anion in solution
+
 
 # Excited-state proton transfer in both solvents!
 
 ![StaticSpectra](/images/Poster5.png)
-***Fig. 5** Transient absorption and molar extinction spectra*
+***Fig. 5**. Transient absorption and molar extinction spectra*
+
+The transient absorption spectra at long delay times resemble the absorption by the ground-state anion 4NC−. The spectrum is less pronounced in water due to the fact the water is more likely to re-protonate 4NC− than 2-propanol. 
+
+![Jablonski](/images/Poster6.png)
+***Fig. 6**. Jablonksi-like diagram summarizing observed dynamics*
+
+Although both solvents appear to allow for 4NC to undergo excited-state proton transfer, the pathways seem to differ in the two solvents.
 
 
 
