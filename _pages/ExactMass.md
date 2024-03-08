@@ -6,16 +6,11 @@ permalink: /exactmass/
 
 # Exact Mass Calculator
 
-<details>
-<summary>Click to view calculator</summary>
 
-```html
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exact Mass Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,6 +29,13 @@ permalink: /exactmass/
         <h2>Exact Mass Calculator</h2>
         <label for="inputString">Enter your string:</label>
         <input type="text" id="inputString" placeholder="e.g., H2O">
+
+        <label for="charge">Select charge:</label>
+        <select id="charge">
+            <option value="-1">-1</option>
+            <option value="0" selected>0</option>
+            <option value="+1">+1</option>
+        </select>
 
         <button onclick="calculateMass()">Calculate Mass</button>
 
