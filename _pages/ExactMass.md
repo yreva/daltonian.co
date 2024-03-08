@@ -1,3 +1,9 @@
+---
+layout: page
+title: Exact Mass Calculator
+permalink: /exactmass/
+---
+
 # Exact Mass Calculator
 
 <details>
