@@ -4,9 +4,6 @@ title: Exact Mass Calculator
 permalink: /exactmass/
 ---
 
-# Exact Mass Calculator
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,7 +49,7 @@ permalink: /exactmass/
             letterCounts = getNumberOfAtoms(matches,masses);
         }
 
-        let totalMass = 0;
+        var totalMass = 0;
         totalMass = getTotalMass(masses,letterCounts);
         document.getElementById('result').innerHTML = "Exact mass: m/z = ${totalMass}";
     }
@@ -71,7 +68,7 @@ permalink: /exactmass/
     }
 
     function getTotalMass(masses,letterObject)
-        let total = 0;
+        var total = 0;
         for (const letter in letterObject) {
             if (letterObject.hasOwnProperty(letter) && masses.hasOwnProperty(letter)) {
                 total += letterObject[letter] * masses[letter];
