@@ -25,36 +25,61 @@ permalink: /exactmass/
 </head>
 <body>
 
-    <div id="calculator">
-        <h2>Exact Mass Calculator</h2>
-        <label for="inputString">Enter your string:</label>
-        <input type="text" id="inputString" placeholder="e.g., H2O">
+<div id="calculator">
+    <label for="inputString">Enter your molecular formula:</label>
+    <input type="text" id="inputString" placeholder="e.g., H2O">
 
-        <label for="charge">Select charge:</label>
-        <select id="charge">
-            <option value="-1">-1</option>
-            <option value="0" selected>0</option>
-            <option value="+1">+1</option>
-        </select>
+<label for="charge">Select charge:</label>
+<select id="charge">
+    <option value="-1">-1</option>
+    <option value="0" selected>0</option>
+    <option value="+1">+1</option>
+</select>
 
-        <button onclick="calculateMass()">Calculate Mass</button>
+<button onclick="calculateMass()">Calculate Mass</button>
 
-        <p id="result"></p>
-    </div>
+<p id="result"></p>
+</div>
 
-    <script>
-        function calculateMass() {
-            const inputString = document.getElementById('inputString').value;
-            const mass = calculateExactMass(inputString);
-            document.getElementById('result').innerHTML = `Exact Mass: ${mass} g/mol`;
+<script>
+    function calculateMass() {
+        const masses = {H:1.007825,C:12.000000,N:14.003074,O:15.994915,Na:22.989770}
+        const inputString = document.getElementById('inputString').value;
+        // Get each element + number of atoms
+        const matches = inputString.match(/[A-Za-z][a-z]*\d+/g);
+        letterCounts = {}
+        if (matches) {
+            letterCounts = getNumberOfAtoms(matches,masses);
         }
 
-        function calculateExactMass(inputString) {
-            // Implement your exact mass calculation logic here
-            // For simplicity, let's just return the length of the input string
-            return inputString.length;
+        let totalMass = 0;
+        totalMass = getTotalMass(masses,letterCounts)
+        document.getElementById('result').innerHTML = "Exact mass: m/z = ${totalMass}"
+    }
+    
+    function getNumberOfAtoms(patternMatches,massList) {
+        const result = {};
+        matches.forEach(match => {
+        const letterMatch = match.match(/[A-Za-z][a-z]*/);
+        const letter = letterMatch ? letterMatch[0] : null;
+        const value = parseInt(match.replace(/[A-Za-z][a-z]*/, '')); // Extract numerical value and convert to integer
+        if (letter !== null) {
+            result[letter] = (result[letter] || 0) + value;
         }
-    </script>
+        });
+        return result;
+    }
+
+    function getTotalMass(masses,letterObject)
+        let total = 0;
+        for (const letter in letterObject) {
+            if (letterObject.hasOwnProperty(letter) && masses.hasOwnProperty(letter)) {
+                total += letterObject[letter] * masses[letter];
+        }
+        return total;
+    }
+
+</script>
 
 </body>
 </html>
