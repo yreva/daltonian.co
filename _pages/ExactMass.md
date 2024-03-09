@@ -44,18 +44,18 @@ permalink: /exactmass/
         const inputString = document.getElementById('inputString').value;
         // Get each element + number of atoms
         const matches = inputString.match(/[A-Za-z][a-z]*\d+/g);
-        letterCounts = {};
+        let letterCounts = {};
         if (matches) {
             letterCounts = getNumberOfAtoms(matches,masses);
         }
 
-        var totalMass = 0;
-        totalMass = getTotalMass(masses,letterCounts);
+        const totalMass = getTotalMass(masses,letterCounts);
         document.getElementById('result').innerHTML = "Exact mass: m/z = ${totalMass}";
     }
     
     function getNumberOfAtoms(patternMatches,massList) {
-        const result = {};
+        let result = {};
+        const matches = patternMatches
         matches.forEach(match => {
         const letterMatch = match.match(/[A-Za-z][a-z]*/);
         const letter = letterMatch ? letterMatch[0] : null;
@@ -67,12 +67,12 @@ permalink: /exactmass/
         return result;
     }
 
-    function getTotalMass(masses,letterObject)
-        var total = 0;
+    function getTotalMass(masses,letterObject) {
+        let total = 0;
         for (const letter in letterObject) {
             if (letterObject.hasOwnProperty(letter) && masses.hasOwnProperty(letter)) {
                 total += letterObject[letter] * masses[letter];
-        }
+        }}
         return total;
     }
 
