@@ -39,18 +39,20 @@ permalink: /exactmass/
 </div>
 
 <script>
-    function calculateMass() {
-        const masses = {H:1.007825,C:12.000000,N:14.003074,O:15.994915,Na:22.989770};
+        function calculateMass() {
+        const atoms = {H:1.007825,C:12.000000,N:14.003074,O:15.994915,Na:22.989770,H:1.007825,C:12.000000,N:14.003074,O:15.994915,F:18.998403,Na:22.989770,Cl:34.968853,S:31.972072,K:39.963999,W:183.950953};
+        const isotopes = {j2H:2.014102,j13C:13.003355,j15N:15.000109,jO17:16.999131,jO18:17.999159,j34S:33.967868,j37Cl:36.965903}
         const inputString = document.getElementById('inputString').value;
         // Get each element + number of atoms
-        const matches = inputString.match(/[A-Za-z][a-z]*\d+/g);
+        const matches = inputString.match(/[A-Za-z][a-z]*\d*/g);
         let letterCounts = {};
         if (matches) {
-            letterCounts = getNumberOfAtoms(matches,masses);
+            letterCounts = getNumberOfAtoms(matches,atoms);
         }
 
-        const totalMass = getTotalMass(masses,letterCounts);
-        document.getElementById('result').innerHTML = "Exact mass: m/z = ${totalMass}";
+        const totalMass = getTotalMass(atoms,letterCounts);
+        const roundedMass = totalMass.toFixed(6);
+        document.getElementById('result').innerHTML = `Exact mass: m/z = ${roundedMass}`;
     }
     
     function getNumberOfAtoms(patternMatches,massList) {
@@ -60,8 +62,11 @@ permalink: /exactmass/
         const letterMatch = match.match(/[A-Za-z][a-z]*/);
         const letter = letterMatch ? letterMatch[0] : null;
         const value = parseInt(match.replace(/[A-Za-z][a-z]*/, '')); // Extract numerical value and convert to integer
-        if (letter !== null) {
+        console.log(isNaN(value));
+        if (letter !== null && !isNaN(value)) {
             result[letter] = (result[letter] || 0) + value;
+        } else if  (letter !== null && isNaN(value)) {
+            result[letter] = (result[letter] || 0) + 1;
         }
         });
         return result;
