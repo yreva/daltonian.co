@@ -51,8 +51,20 @@ permalink: /exactmass/
         }
 
         const totalMass = getTotalMass(atoms,letterCounts);
-        const roundedMass = totalMass.toFixed(6);
-        document.getElementById('result').innerHTML = `Exact mass: m/z = ${roundedMass}`;
+        
+        if (document.getElementById('charge').value == 0) {
+            const roundedMass = totalMass.toFixed(6);
+            document.getElementById('result').innerHTML = `Exact mass: m/z = ${roundedMass}`;
+        } else if (document.getElementById('charge').value == -1) {
+            const chargedMass = totalMass + 5.48579909065e-4;
+            const roundedMass = chargedMass.toFixed(6);
+            document.getElementById('result').innerHTML = `Exact mass: m/z = ${roundedMass}`;
+        } else {
+            const chargedMass = totalMass - 5.48579909065e-4;
+            const roundedMass = chargedMass.toFixed(6);
+            document.getElementById('result').innerHTML = `Exact mass: m/z = ${roundedMass}`;
+        }
+        
     }
     
     function getNumberOfAtoms(patternMatches,massList) {
