@@ -39,8 +39,9 @@ permalink: /exactmass/
 </div>
 
 <script>
+        // https://jsfiddle.net/pr1bmkn3/
         function calculateMass() {
-        const atoms = {H:1.007825,C:12.000000,N:14.003074,O:15.994915,Na:22.989770,H:1.007825,C:12.000000,N:14.003074,O:15.994915,F:18.998403,Na:22.989770,Cl:34.968853,S:31.972072,K:39.963999,W:183.950953};
+        const atoms = {H:1.007825,C:12.000000,N:14.003074,O:15.994915,Na:22.989770,H:1.007825,C:12.000000,N:14.003074,O:15.994915,F:18.998403,,Cl:34.968853,S:31.972072,K:39.963999,W:183.950953};
         const isotopes = {j2H:2.014102,j13C:13.003355,j15N:15.000109,jO17:16.999131,jO18:17.999159,j34S:33.967868,j37Cl:36.965903}
         const inputString = document.getElementById('inputString').value;
         // Get each element + number of atoms
