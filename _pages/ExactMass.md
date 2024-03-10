@@ -42,6 +42,7 @@ permalink: /exactmass/
 
 <div>
 <a href="https://daltonian.co/formulacalc" target="_blank">Check out our Molecular Formula Calculator here.</a>
+</div>
 
 <script>
         // https://jsfiddle.net/pr1bmkn3/
