@@ -38,6 +38,11 @@ permalink: /exactmass/
 <p id="result"></p>
 </div>
 
+<br>
+
+<div>
+<a href="https://daltonian.co/formulacalc" target="_blank">Check out our Molecular Formula Calculator here.</a>
+
 <script>
         // https://jsfiddle.net/pr1bmkn3/
         function calculateMass() {

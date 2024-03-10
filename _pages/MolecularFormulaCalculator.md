@@ -57,12 +57,13 @@ permalink: /formulacalc/
  function molecularFormulasWithinTolerance(targetMass, charge, tolerance) {
   // Define atomic masses
   const atomicMasses = {
-    H: 1.0079,
-    C: 12.0107,
-    N: 14.0067,
-    O: 15.9994,
-    Cl: 35.4530,
-    S: 32.0650
+    H: 1.007825,
+    C: 12.000000,
+    N: 14.003074,
+    O: 15.994915,
+    Na: 22.989770
+    Cl: 34.968853,
+    S: 31.972072
   };
 
   // Helper function to calculate the molecular mass of the current formula
@@ -81,8 +82,8 @@ permalink: /formulacalc/
         for (let o = 0; o <= 10; o++) {
         	if (o / c < 1.6 && n / c < 1.6 && h/c > 0.4) {
             for (let cl = 0; cl <= 0; cl++) {
-              for (let s = 0; s <= 0; s++) {
-                const formula = { C: c, H: h, N: n, O: o, Cl: cl, S: s };
+              for (let na = 0; na <= 1; na++) {
+                const formula = { C: c, H: h, N: n, O: o, Cl: cl, Na: na };
                 const mass = calculateMolecularMass(formula) - charge * 5.48579909065e-4;
                 const massError = 1000*(targetMass - mass) / mass;
 
