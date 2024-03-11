@@ -121,7 +121,7 @@ permalink: /formulacalc/
 
 <div>
 If you would like any elements added please contact info{at}daltonian.co.
-<div>
+</div>
 
 </body>
 </html>
