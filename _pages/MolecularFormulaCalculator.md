@@ -9,10 +9,15 @@ permalink: /formulacalc/
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chemical Composition</title>
 
 </head>
 <body align=center>
+
+  <div>
+  This calculator has been created to assign molecular formulas from high-resolution mass spectrometry of predominately organic samples. As such, only the elements listed below are programmed in. To limit the amount that is displayed, unreasonable guesses with O:C greater than 2, N:C greater than 2, and H:C less than 0.2 are omitted.
+  </div>
+
+  <br>
 
   <form>
   <label for="mz">Enter Measured m/z:</label>
@@ -109,6 +114,14 @@ permalink: /formulacalc/
 
 <p id="result"></p>
 </div>
+
+<br>
+<br>
+<br>
+
+<div>
+If you would like any elements added please contact info{at}daltonian.co.
+<div>
 
 </body>
 </html>
