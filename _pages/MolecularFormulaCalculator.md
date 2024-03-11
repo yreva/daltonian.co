@@ -61,6 +61,7 @@ permalink: /formulacalc/
     <label for="numNa"> #Na: </label>
     <select id="numNa" name="numNa">
       <option value="0" selected>0</option>
+      <option value="1" >1</option>
       <option value="2" >2</option>
     </select>
 
@@ -115,7 +116,7 @@ permalink: /formulacalc/
 
 <script>
 
- function molecularFormulasWithinTolerance(targetMass, charge, tolerance) {
+ function molecularFormulasWithinTolerance(measuredMass, charge, tolerance) {
   // Define atomic masses
   const atomicMasses = {
     H: 1.007825,
@@ -151,12 +152,12 @@ permalink: /formulacalc/
     for (let h = 0; h <= maxH; h++) {
       for (let n = 0; n <= maxN; n++) {
         for (let o = 0; o <= maxO; o++) {
-        	if (o / c < 1.6 && n / c < 1.6 && h/c > 0.4) {
+        	if (o / c < 2 && n / c < 2 && h/c > 0.2) {
             for (let cl = 0; cl <= maxCl; cl++) {
               for (let na = 0; na <= maxNa; na++) {
                 const formula = { C: c, H: h, N: n, O: o, Cl: cl, Na: na };
-                const mass = calculateMolecularMass(formula) - charge * 5.48579909065e-4;
-                const massError = 1000*(targetMass - mass) / mass;
+                const formulaMass = calculateMolecularMass(formula) - charge * 5.48579909065e-4;
+                const massError = 1000000*(measuredMass - formulaMass) / formulaMass;
 
                 if (Math.abs(massError) <= tolerance) {
                   formulasWithinTolerance.push(formula);
@@ -184,7 +185,7 @@ function calculateFormulas() {
   	const formulaString = Object.keys(formula)
     .filter(atom => formula[atom] !== 0)
     .map(atom => `${atom}${formula[atom]}`)
-    .join('');
+    .join(' ');
   	document.getElementById('result').innerHTML += `${index + 1}. ${formulaString}  ${differenceValues[index].toFixed(2)} ppm <br>`; // Print output line by line
     console.log(`${index + 1}. ${formulaString}  ${differenceValues[index].toFixed(2)} ppm <br>`);
 	});
