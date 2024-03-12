@@ -41,7 +41,7 @@ permalink: /exactmass/
 <br>
 
 <div>
-Please note that only H, He, C, N, O, F, Na, P, S, Cl, and K and their common isotops are included in this calculator. Using atoms other atoms will yield incorrect masses <br> <br>
+Please note that only H, He, C, N, O, F, Na, P, S, Cl, and K and their common isotopes are included in this calculator. Using atoms other atoms will yield incorrect masses <br> <br>
 <a href="https://daltonian.co/formulacalc" target="_blank">Check out our Molecular Formula Calculator here.</a>
 </div>
 
