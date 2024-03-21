@@ -125,7 +125,7 @@ function getNumberOfAtoms(patternMatches,massList) {
     return result;
 }
 
-    function getNumberOfIsotopes(patternMatches,massList) {
+function getNumberOfIsotopes(patternMatches,massList) {
     let result = {};
     const matches = patternMatches
     matches.forEach(match => {
