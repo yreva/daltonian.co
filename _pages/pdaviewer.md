@@ -1,7 +1,7 @@
 ---
 layout: page
-title: What is DaltonView?
-permalink: /daltonview/
+title: Thermo RAW PDA Viewer
+permalink: /pdaviewer/
 ---
 
 ## [Download Executable (Windows Only)](https://u.pcloud.link/publink/show?code=kZIhtF0Z6NvagFBteLSceA7yfS636pgR056V) ##
