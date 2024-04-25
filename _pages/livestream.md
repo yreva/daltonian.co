@@ -31,7 +31,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    const deadline = new Date("Jun 14, 2024 10:00:00").getTime();
+    const deadline = new Date("Jun 14, 2024 17:00:00 GMT+0000").getTime();
     const now = new Date().getTime();
     const t = deadline - now;
     const seconds = Math.floor(t / 1000);
