@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Daltonian
+name: Daltonian Scientific
 
 # Name of the author
 author: Avery Dalton
 
 # Short bio or description (displayed in the header)
-description: Science Operations
+description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/logo.png
@@ -26,7 +26,7 @@ footer-links:
   flickr:
   github: daltonian
   instagram:
-  linkedin: avery-dalton-30398613a
+  linkedin: averybd
   pinterest:
   rss: rss
   twitter: nitrocatechol
