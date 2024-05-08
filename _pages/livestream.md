@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Livestream
-permalink: /livestream/
+permalink: /stream/
 ---
 
 <div id="countdown" style="text-align: center; font-weight: bold; font-size: 48px;">
