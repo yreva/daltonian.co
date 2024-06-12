@@ -44,10 +44,36 @@ window.onload = function () {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Live Stream</title>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust based on your needs */
+        }
+        .responsive-iframe {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            width: 100%;
+            max-width: 560px; /* Adjust based on your needs */
+            overflow: hidden;
+        }
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Watch Our Live Stream</h1>
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-        <iframe width="560" height="315" style="align: center" src="https://www.youtube.com/embed/BjHV1RLVnvk?si=iCzTVC3WdwkOY26T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1 style="text-align: center;">Watch Our Live Stream</h1>
+    <div class="video-container">
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjHV1RLVnvk?si=iCzTVC3WdwkOY26T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 </body>
+
