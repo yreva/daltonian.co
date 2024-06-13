@@ -69,10 +69,10 @@ window.onload = function () {
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Watch Our Live Stream</h1>
+    <h1 style="text-align: center;">Watch via YouTube below</h1>
     <div class="video-container">
         <div class="responsive-iframe">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjHV1RLVnvk?si=iCzTVC3WdwkOY26T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0-un5cNvXcE?si=cN_TKPV5UOGSwLG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </body>
