@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dissertation Defense
-permalink: /stream/
+permalink: /uci_defense/
 ---
 
 
