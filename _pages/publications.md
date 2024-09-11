@@ -3,7 +3,11 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-#3) Avery B. Dalton\*, Dmitry A. Fishman, a nd Sergey A. Nizkorodov, Ultrafast Proton Transfer in 4-Nitrocatechol: Implications for the Photochemistry of Nitrophenols, *Journal of Physical Chemistry A*, (2023), *127*, pp. 8307–8315. [DOI:10.1021/acs.jpca.3c04322](https://doi.org/10.1021/acs.jpca.3c04322)
+#4) Avery B. Dalton, Lisa M. Wingen, and Sergey A. Nizkorodov, Isomeric Identification of the Nitroindole Chromophore in Indole + NO3 Organic Aerosol, *ACS Physical Chemistry Au*, (2024), pages tbd. [DOI:10.1021/acsphyschemau.4c0004](https://doi.org/10.1021/acsphyschemau.4c00044)
+
+<img src="/images/Paper4.jpeg" width=500 align='middle'/>
+
+#3) Avery B. Dalton\*, Dmitry A. Fishman, and Sergey A. Nizkorodov, Ultrafast Proton Transfer in 4-Nitrocatechol: Implications for the Photochemistry of Nitrophenols, *Journal of Physical Chemistry A*, (2023), *127*, pp. 8307–8315. [DOI:10.1021/acs.jpca.3c04322](https://doi.org/10.1021/acs.jpca.3c04322)
 
 <img src="https://raw.githubusercontent.com/yreva/daltonian.co/main/images/TOC_1.png" width=500 align='middle'/> 
 
