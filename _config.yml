@@ -1,11 +1,11 @@
-title: "Affiliates"
+title: "Daltonian Scientific"
 email: wowthemesnet@gmail.com
 timezone: UTC
-baseurl: "/affiliates-jekyll-theme"
+baseurl: "/"
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-author: Sal
+logo: 'images/daltonian_wide.png'
+favicon: 'images/favicon.ico'
+author: AD
 paginate: 30
 disqus: 'demowebsite'
 locale: en_us
@@ -24,10 +24,10 @@ ganalytics: G-TFN3Q83RXE
 
 # Authors
 authors:
-  sal:
+  ad:
     name: Avery
     display_name: Avery
-    avatar: 'assets/images/sal.png'
+    avatar: 'images/logo.png'
     email: avery@daltonian.co
     description: "Scientist"
 
