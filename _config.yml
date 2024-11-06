@@ -3,7 +3,7 @@ email: wowthemesnet@gmail.com
 timezone: UTC
 baseurl: "/"
 permalink: "/:title/"
-logo: 'images/daltonian_wide.png'
+logo: 'images/daltonian_wide_small.png'
 favicon: 'images/favicon.ico'
 author: AD
 paginate: 30
