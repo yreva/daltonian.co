@@ -6,26 +6,20 @@ background: '/img/bg-index.jpg'
 
 <!-- Home Intro
 ================================================== -->
-<div class="homecontainer">
-  <img class="homeimage" src="\images\IMG_1617.jpeg" alt="Image">
-  <div class="hometextbox">
-    <p>"It was a game, a very interesting game one could play. Whenever one solved one of the little problems,
-      one could write a paper about it. It was very easy for any second-rate physicist to do first-rate work. 
-      There has not been such a glorious time since. It is very difficult now for a first-rate physicist to do second-rate work."</p>
-    <h2>-Paul Dirac</h2>
+{% if page.url == "/" %} 
+<div class="rounded mb-5 hero">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-6">
+      <h1 class="font-weight-bold mb-4 serif-font">Science as a Service</h1>
+      <p class="lead mb-4">Daltonian operates independent research endeavors and offers solutions in scientific collaboration and consulting.</p>
+      <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">About us</a>
+    </div>
+    <div class="col-md-6 text-right pl-0 pl-lg-4">
+      <img class="intro" height="500" src="{{site.baseurl}}/images/intro.svg">      
+    </div>
   </div>
 </div>
-
-<div class="homecontainer">
-<div class="hometextbox" style="background-color: #fff";>
-  <h1>Impacts</h1>
-  <p>My work has focused on nitrophenols, a set of molecules which exhibit a natural yellow color. This yellow is in part what constitutes the brown smoke one observes in a wildfire. These nitrophenols are produced in a fire, they begin to break down due to various chemical reactions. The type of reactions I have focused on involve sunlight coming in and potentially bleaching these molecules, the same sort of fade that happens when something is left outside in the sun for too long.</p>
-  <a href="https://daltonian.co/publications">
-    <button class="button-37" role="button">View my Publications</button>
-  </a>  
-</div>
-<img class="homeimage" src="\images\molecule.jpg" alt="Image">
-</div>
+{% endif %}
 
 <!-- Featured
 ================================================== -->

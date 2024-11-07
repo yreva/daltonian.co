@@ -2,6 +2,7 @@
 layout: post
 title: "A deeper look at data"
 categories: science
+image: images/molecule.jpg
 ---
 
 As data science becomes increasingly popular, many professionals in various fields are looking for ways to incorporate it into their work. One such field is chemistry, where the use of data science can lead to significant advancements.

@@ -2,6 +2,7 @@
 layout: post
 title: "DaltonView - Technical Notes"
 categories: Software
+image: images/daltonview.png
 ---
 DaltonView is a simple one-file application script which can be used to display and export TD-DFT data from raw output files. This program spawned mostly out of convenience toward my own work, making it simple to generate an absorption spectrum for a molecule, modify the parameters of the spectrum in real-time, and easily export to a CSV for use in Matlab, IGOR, etc. It is important to note that the spectra is normalized to the strongest absorption band, so all information related to absolute oscillator strength is gone.
 
