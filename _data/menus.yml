@@ -7,8 +7,16 @@ topmenu:
 - title: About
   url: "about"
 
+- title: Publications
+  url: "pulications/"
+
+- title: Store
+  url: shop.daltonian.co
+
 - title: Contact
   url: "contact/"
+
+
 
 # Footer Menu
 footermenu:
