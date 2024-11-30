@@ -8,10 +8,10 @@ topmenu:
   url: "about"
 
 - title: Publications
-  url: "pulications/"
+  url: "publications/"
 
 - title: Store
-  url: shop.daltonian.co
+  url: "shop.daltonian.co"
 
 - title: Contact
   url: "contact/"
