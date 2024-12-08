@@ -18,7 +18,7 @@ topmenu:
   external: false
 
 - title: Store
-  url: "https://shop.daltonian.co"
+  url: "shop.daltonian.co"
   external: true
 
 - title: Contact
