@@ -9,13 +9,13 @@ topmenu:
 
 - title: Software
   url: "software"
-  external: true
 
 - title: Publications
   url: "publications/"
 
 - title: Store
   url: "shop.daltonian.co"
+  external: true
 
 - title: Contact
   url: "contact/"
