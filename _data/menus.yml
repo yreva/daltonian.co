@@ -3,22 +3,27 @@ topmenu:
 
 - title: Home
   url: ""
+  external: false
 
 - title: About
   url: "about"
+  external: false
 
 - title: Software
   url: "software"
+  external: false
 
 - title: Publications
-  url: "publications/"
+  url: "publications"
+  external: false
 
 - title: Store
   url: "shop.daltonian.co"
   external: true
 
 - title: Contact
-  url: "contact/"
+  url: "contact"
+  external: false
 
 
 
