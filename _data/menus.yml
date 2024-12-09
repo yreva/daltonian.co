@@ -9,10 +9,6 @@ topmenu:
   url: "about"
   external: false
 
-- title: Software
-  url: "software"
-  external: false
-
 - title: Publications
   url: "publications"
   external: false
