@@ -59,17 +59,17 @@ gtag('config', '{{site.ganalytics}}');
                 <a class="nav-link px-3 {% if item.class %}{{ item.class }}{% endif %}" href="{% if item.external %}{{ item.url }}{% else %}{{ site.baseurl }}/{{ item.url }}{% endif %}" alt="{{ item.title }}"> {{ item.title }} </a>
               </li>
               {% endfor %}
-              <li class="dropdown">
-                <a href="/software/">Software</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/daltonview/">DaltonView</a></li>
-                  <li><a href="/exactmass/">Exact Mass Calculator</a></li>
-                  <li><a href="/formulacalc/">Formula Finder</a></li>
-                  <li><a href="/pdaviewer/">HPLC/PDA Analysis</a></li>
-                  <li><a href="/chims/">Smog Chamber Management</a></li>
-                </ul>
-              </li>
             </ul>
+            <li class="dropdown">
+              <a href="/software/">Software</a>
+              <ul class="dropdown-menu">
+                <li><a href="/daltonview/">DaltonView</a></li>
+                <li><a href="/exactmass/">Exact Mass Calculator</a></li>
+                <li><a href="/formulacalc/">Formula Finder</a></li>
+                <li><a href="/pdaviewer/">HPLC/PDA Analysis</a></li>
+                <li><a href="/chims/">Smog Chamber Management</a></li>
+              </ul>
+            </li>
           </div>
 
         </div>
