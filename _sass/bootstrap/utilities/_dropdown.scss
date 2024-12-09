@@ -1,0 +1,23 @@
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below the parent menu item */
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Show on hover */
+  }
+  
