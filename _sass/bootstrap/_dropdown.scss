@@ -2,6 +2,10 @@
 .dropup,
 .dropdown {
   position: relative;
+
+  &:hover .dropdown-menu {
+    display: block; // Show the dropdown menu on hover
+  }
 }
 
 .dropdown-toggle {
